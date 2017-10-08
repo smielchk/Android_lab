@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.liuchaokai.constraintlayouttest.MainActivity">
+
+    <TextView
+        android:id="@+id/Head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/zhongda"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="20dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <ImageView
+        android:id="@+id/sysu"
+        android:layout_width="100sp"
+        android:layout_height="100sp"
+        android:src="@drawable/sysu"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/Head"
+        app:layout_constraintRight_toRightOf="@+id/Head"
+        app:layout_constraintLeft_toLeftOf="@+id/Head" />
+
+    <TextView
+        android:id="@+id/snumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/xuehao"
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/sysu" />
+
+    <TextView
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/mima"
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/snumber"
+        app:layout_constraintRight_toRightOf="@+id/snumber"
+        app:layout_constraintLeft_toLeftOf="@+id/snumber" />
+
+    <EditText
+        android:id="@+id/editSnumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="14"
+        android:inputType="number"
+        android:hint="@string/inxuehao"
+        app:layout_constraintLeft_toRightOf="@+id/snumber"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintTop_toTopOf="@+id/snumber"
+        app:layout_constraintBottom_toBottomOf="@+id/snumber" />
+
+    <EditText
+        android:id="@+id/editPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="14"
+        android:inputType="textPassword"
+        android:hint="@string/inmima"
+        app:layout_constraintLeft_toRightOf="@+id/password"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintTop_toTopOf="@+id/password"
+        app:layout_constraintBottom_toBottomOf="@+id/password" />
+
+    <RadioGroup
+        android:id="@+id/selectST"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/editPassword"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent">
+        <RadioButton
+            android:id="@+id/radioButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:textColor="#000000"
+            android:checked="true"
+            android:text="@string/xuesheng" />
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:textColor="#000000"
+            android:text="@string/jiaozhigong"
+            app:layout_constraintLeft_toRightOf="@+id/radioButton1"
+            android:layout_marginLeft="10dp"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/button"
+        style="@android:style/Widget.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/signin"
+        android:textSize="18sp"
+        android:textColor="#ffffff"
+        android:background="@drawable/mipmap"
+        android:layout_marginLeft="120dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/selectST" />
+
+    <Button
+        android:id="@+id/button2"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/signup"
+        android:textSize="18sp"
+        android:textColor="#ffffff"
+        android:background="@drawable/mipmap"
+        app:layout_constraintLeft_toRightOf="@+id/button"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintTop_toTopOf="@+id/button"
+        app:layout_constraintBottom_toBottomOf="@+id/button" />
+
+</android.support.constraint.ConstraintLayout>
