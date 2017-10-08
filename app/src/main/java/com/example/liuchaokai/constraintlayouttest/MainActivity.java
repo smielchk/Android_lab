@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
         passwordEdit = (EditText) findViewById(R.id.editPassword);
         Button login = (Button) findViewById(R.id.button);
         Button signup = (Button) findViewById(R.id.button2);
+
         login.setOnClickListener(new View.OnClickListener()
           {
               @Override
