@@ -11,7 +11,6 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-
     private EditText accountEdit;
     private EditText passwordEdit;
     @Override
