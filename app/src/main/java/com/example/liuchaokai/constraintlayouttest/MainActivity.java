@@ -29,7 +29,6 @@ public class MainActivity extends AppCompatActivity {
               public void onClick(View view) {
                   String account = accountEdit.getText().toString();
                   String password = passwordEdit.getText().toString();
-
                   //Toast.makeText(MainActivity.this,"You click the signin button!",Toast.LENGTH_SHORT).show();
                   if(account.equals("15352223") && password.equals("123456"))
                   {
