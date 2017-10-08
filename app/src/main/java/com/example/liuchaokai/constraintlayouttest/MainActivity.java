@@ -53,6 +53,5 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(MainActivity.this,"You clickthe signup button!",Toast.LENGTH_SHORT).show();
             }
         });
-
     }
 }
